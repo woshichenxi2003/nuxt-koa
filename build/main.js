@@ -118,7 +118,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 
 var app = new __WEBPACK_IMPORTED_MODULE_0_koa___default.a();
 var host = process.env.HOST || '127.0.0.1';
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 2000;
 
 // Import and Set Nuxt.js options
 var config = __webpack_require__(0);
@@ -149,7 +149,7 @@ app.use(function (ctx) {
   });
 });
 
-app.listen(port, host);
+app.listen(port);
 console.log('Server listening on ' + host + ':' + port); // eslint-disable-line no-console
 
 /***/ }
